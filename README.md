@@ -1,1 +1,0 @@
-# Cluster EKS com Terraform 🚀 🚀 🚀
