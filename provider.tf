@@ -5,8 +5,14 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    bucket = "gen-tfm-state-s3"
+    key    = "proj-eks/terraform.tfstate"
+    region = "us-east-2"
+  }
 }
 
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-2"
 }
