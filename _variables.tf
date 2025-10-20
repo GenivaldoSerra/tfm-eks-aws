@@ -7,3 +7,8 @@ variable "cidr_block" {
 #   description = "The AWS region to deploy resources in"
 #   type        = string
 # } 
+
+variable "project_name" {
+  type        = string
+  description = "To be used TAG's Name."
+}
